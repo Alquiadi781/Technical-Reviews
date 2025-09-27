@@ -1,0 +1,107 @@
+/* تنسيقات صفحة المراجعات فقط (بدون الرأس والفوتر) */
+
+.reviews-header {
+    text-align: center;
+    margin: 2rem 0 1rem 0;
+}
+
+.reviews-header h1 {
+    font-size: 2.2rem;
+    color: #232946;
+    margin-bottom: 0.5rem;
+}
+
+.reviews-header p {
+    color: #555;
+    font-size: 1.1rem;
+}
+
+.reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.review-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(35,41,70,0.08);
+    width: 320px;
+    padding: 1.5rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+}
+
+.review-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(35,41,70,0.13);
+}
+
+.review-image {
+    font-size: 2.8rem;
+    color: #eebf63;
+    margin-bottom: 1rem;
+    align-self: center;
+}
+
+.review-content h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.3rem;
+    color: #232946;
+}
+
+.review-content p {
+    color: #444;
+    font-size: 1.05rem;
+    margin-bottom: 1.2rem;
+}
+
+.review-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.rating {
+    background: #eebf63;
+    color: #232946;
+    padding: 0.2rem 0.8rem;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.like-btn {
+    background: #232946;
+    color: #fff;
+    border: none;
+    border-radius: 16px;
+    padding: 0.3rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.like-btn:hover {
+    background: #eebf63;
+    color: #232946;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .reviews-container {
+        gap: 1.2rem;
+    }
+    .review-card {
+        width: 90vw;
+        max-width: 350px;
+    }
+}

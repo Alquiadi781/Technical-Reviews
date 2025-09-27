@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة مراجعات تقنية - المراجعات</title>
+    <link rel="stylesheet" href="../CSS/Reviews_Style.css">
+     <link rel="stylesheet" href="../CSS/common_Style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>مراجعات تقنية</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link" target="_blank">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="reviews.html" class="nav-link active" target="_blank">المراجعات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link" target="_blank">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link" target="_blank">تواصل معنا</a>
+                    </li>
+                    
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="reviews-header">
+            <h1>مراجعات الأدوات التقنية</h1>
+            <p>اكتشف تقييماتنا لأشهر الأدوات والتطبيقات التقنية</p>
+        </section>
+
+        <section class="reviews-container">
+            <div class="review-card">
+                <div class="review-image">
+                    <i class="fab fa-microsoft"></i>
+                </div>
+                <div class="review-content">
+                    <h2>Visual Studio Code</h2>
+                    <p>محرر أكواد مجاني وخفيف من مايكروسوفت، يدعم العديد من اللغات البرمجية والإضافات المفيدة.</p>
+                    <div class="review-meta">
+                        <span class="rating">4.8/5</span>
+                        <button class="like-btn" onclick="likeTool(this)">
+                            <i class="far fa-thumbs-up"></i> أعجبني
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-image">
+                    <i class="fab fa-canva"></i>
+                </div>
+                <div class="review-content">
+                    <h2>Canva</h2>
+                    <p>أداة تصميم رسومية سهلة الاستخدام على الويب، تتيح إنشاء تصاميم احترافية دون الحاجة لخبرة في التصميم.</p>
+                    <div class="review-meta">
+                        <span class="rating">4.5/5</span>
+                        <button class="like-btn" onclick="likeTool(this)">
+                            <i class="far fa-thumbs-up"></i> أعجبني
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-image">
+                    <i class="fas fa-video"></i>
+                </div>
+                <div class="review-content">
+                    <h2>Zoom</h2>
+                    <p>تطبيق اجتماعات الفيديو الشهير الذي أصبح أساسيًا للعمل والتعلم عن بعد خلال الجائحة.</p>
+                    <div class="review-meta">
+                        <span class="rating">4.3/5</span>
+                        <button class="like-btn" onclick="likeTool(this)">
+                            <i class="far fa-thumbs-up"></i> أعجبني
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-image">
+                    <i class="fab fa-trello"></i>
+                </div>
+                <div class="review-content">
+                    <h2>Trello</h2>
+                    <p>أداة رائعة لإدارة المشاريع وتنظيم المهام باستخدام نظام اللوحات والقوائم والبطاقات.</p>
+                    <div class="review-meta">
+                        <span class="rating">4.6/5</span>
+                        <button class="like-btn" onclick="likeTool(this)">
+                            <i class="far fa-thumbs-up"></i> أعجبني
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-image">
+                    <i class="fas fa-sticky-note"></i>
+                </div>
+                <div class="review-content">
+                    <h2>Notion</h2>
+                    <p>أداة متكاملة لتدوين الملاحظات وإدارة المشاريع والمهام، تجمع بين الوثائق وقواعد البيانات.</p>
+                    <div class="review-meta">
+                        <span class="rating">4.7/5</span>
+                        <button class="like-btn" onclick="likeTool(this)">
+                            <i class="far fa-thumbs-up"></i> أعجبني
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>منصة مراجعات تقنية</h3>
+                    <p>نقدم لكم آخر المراجعات والتقييمات لأشهر الأدوات التقنية</p>
+                     </div>
+                     <div class="footer-section">
+                         <h3>روابط سريعة</h3>
+                          <ul>
+                            <li><a href="../index.html">الرئيسية</a></li>
+                            <li><a href="reviews.html">المراجعات</a></li>
+                            <li><a href="about.html">من نحن</a></li>
+                            <li><a href="contact.html">تواصل معنا</a></li>
+                          </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>تابعنا على</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> منصة مراجعات تقنية. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+      
+
+</body>
+</html>
